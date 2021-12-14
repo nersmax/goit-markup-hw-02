@@ -1,7 +1,42 @@
-.link {
-  color: teal;
+.logo {
 }
-
-.link:hover {
-  color: tomato;
+.logo-dark {
+}
+.nav {
+}
+.contacts {
+}
+.section {
+}
+.header {
+}
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #2196f3;
+}
+.logo-dark {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: black;
+}
+.nav {
+}
+.contacts {
+}
+.filters {
+}
+.section-project-portfolio {
+}
+.link-portfolio {
+}
+.titl-portfolio {
+}
+.text-portfolio {
 }
