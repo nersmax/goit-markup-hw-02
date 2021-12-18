@@ -4,16 +4,14 @@
   font-style: normal;
   font-weight: normal;
   line-height: 1.71;
+  color: var(--heders-dark-color);
 }
 :root {
   --first-backlight-color: #2196f3;
   --second-backlight-color: #ffffff;
-  --heders-dark-color: #212121;
-  --heders-light-color: #ffffff;
+  --headers-dark-color: #212121;
+  --text-white-color: #ffffff;
   --text-color: #757575;
-}
-li {
-  list-style-type: none;
 }
 .nav {
   font-family: Roboto;
@@ -21,9 +19,15 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--heders-dark-color);
+}
+.nav-list {
+  list-style-type: none;
 }
 .nav-link:hover {
+  color: var(--first-backlight-color);
+}
+.nav-link:focus {
   color: var(--first-backlight-color);
 }
 .nav-link {
@@ -38,6 +42,7 @@ li {
 
 .nav-active {
   color: var(--first-backlight-color);
+  text-decoration: none;
 }
 .logo {
   text-decoration: none;
@@ -59,6 +64,9 @@ li {
 .header-contacts:hover {
   color: var(--first-backlight-color);
 }
+.header-contacts:focus {
+  color: var(--first-backlight-color);
+}
 .header-contacts {
   text-decoration: none;
   font-family: Roboto;
@@ -66,7 +74,10 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color);
+}
+.header-contacts-list {
+  list-style-type: none;
 }
 .hero-button {
   font-family: Roboto;
@@ -83,34 +94,7 @@ li {
   background-color: #2f303a;
   text-align: center;
 }
-.section {
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-.section-header {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-.section-subtitle {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-
-.header {
+.hero-header {
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
@@ -118,25 +102,63 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--text-white-color);
 }
-.team-name {
-  font-family: Roboto;
+.conditions {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.conditions-header {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--headers-dark-color);
+}
+.conditions-list {
+  list-style-type: none;
+}
+.conditions-subtitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.about-us {
+}
+.about-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.about-list {
+  list-style-type: none;
+}
+.team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--headers-dark-color);
+}
+.team-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 .team-profession {
-  font-family: Roboto;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 .logo-White {
@@ -156,8 +178,13 @@ li {
   color: white;
 }
 .footer-contacts:hover {
-  color: #ffffff;
+  color: var(--second-backlight-color);
 }
+
+.footer-contacts:focus {
+  color: var(--second-backlight-color);
+}
+
 .footer-contacts {
   text-decoration: none;
   font-family: Roboto;
@@ -167,6 +194,12 @@ li {
   line: height 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-address:hover {
+  color: var(--first-backlight-color);
+}
+.footer-address:focus {
+  color: var(--first-backlight-color);
 }
 .footer-address {
   text-decoration: none;
